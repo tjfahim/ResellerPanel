@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboard');
+})->name('dashboard.home');
+Route::get('/licenses-list', function () {
+    return view('licenses_list');
+})->name('licenses_list');
+Route::get('/license-add', function () {
+    return view('license_add');
+})->name('license_add');
+Route::get('/free-trial', function () {
+    return view('free_trial');
+})->name('free_trial');
+Route::get('/files-guide', function () {
+    return view('files_guide');
+})->name('files_guide');
