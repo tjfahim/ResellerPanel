@@ -84,19 +84,20 @@
                     <div class="" style="color: white; background-color: #007BFF; border-top-left-radius: 3px; border-top-right-radius: 3px; font-size: 14px; height: 35px; display: flex; align-items: center; padding-left: 5px;">
                         License Purchase Graph 2023
                     </div>
-                    <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 200px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
-            
+                    <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 300px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
+                        <canvas id="chartjs-bar" style="height: 100%;"></canvas>
                     </div>
                 </div>
+                
                 <div class="col-lg-6 col-md-3 col-sm-3 col-xs-12">
                     <div class="" style="color: white; background-color: #007BFF; border-top-left-radius: 3px; border-top-right-radius: 3px; font-size: 14px; height: 35px; display: flex; align-items: center; padding-left: 5px;">
                         Active Licenses by Softwares
-
                     </div>
-                    <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 200px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
-            
+                    <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 300px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
+                        <canvas id="chartjs-pie" style="height: 100%;"></canvas>
                     </div>
                 </div>
+                
             </div>
           
             
@@ -104,4 +105,83 @@
         </div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+<script>
+    // Define window.theme if not defined
+    if (typeof window.theme === 'undefined') {
+        window.theme = {};
+    }
+
+    // Define the primary color
+    window.theme.primary = '#007BFF';
+
+    // Your Chart.js code here
+    new Chart(document.getElementById("chartjs-bar"), {
+        type: "bar",
+        data: {
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            datasets: [{
+                label: "Purchase",
+                backgroundColor: window.theme.primary,
+                borderColor: window.theme.primary,
+                hoverBackgroundColor: window.theme.primary,
+                hoverBorderColor: window.theme.primary,
+                data: [19, 7],
+                barPercentage: .75,
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 2, 
+                    max: 20 
+                },
+                gridLines: {
+                    display: false
+                },
+                stacked: false
+            }],
+                xAxes: [{
+                    stacked: false,
+                    gridLines: {
+                        color: "transparent"
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+        window.theme.Cpanel = '#D65B77';
+        window.theme.LiteSpeed = '#007BFF';
+        window.theme.CloudLinux = '#D6B152';
+        window.theme.Imunify360 = '#46A6A7';
+        window.theme.Other = '#2F3439';
+
+    new Chart(document.getElementById("chartjs-pie"), {
+  type: "pie",
+  data: {
+    labels: ["Cpanel", "LiteSpeed", "CloudLinux", "Imunify360", "Other"],
+    datasets: [{
+      data: [234, 18, 10, 175, 147],
+      backgroundColor: [
+        window.theme.Cpanel,
+        window.theme.LiteSpeed,
+        window.theme.CloudLinux,
+        window.theme.Imunify360,
+        window.theme.Other,
+      ],
+      borderColor: "transparent"
+    }]
+  },
+  options: {
+    maintainAspectRatio: false,
+    cutoutPercentage: 65,
+  }
+});
+</script>
+
 @endsection

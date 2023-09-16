@@ -30,3 +30,9 @@ Route::get('/free-trial', function () {
 Route::get('/files-guide', function () {
     return view('files_guide');
 })->name('files_guide');
+Route::get('/redeem-code', function () {
+    return view('redeem_code');
+})->name('redeem_code');
+Route::get('/branding', function () {
+    return view('branding');
+})->name('branding');

@@ -66,6 +66,13 @@
     <!-- modernizr JS
 		============================================ -->
     <script src="{{ asset('admin/assets/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+    <style>
+        /* Add your styles for night mode here */
+        body.night-mode {
+            background-color: white;
+        }
+      
+    </style>
 </head>
 
 <body>
@@ -121,8 +128,7 @@
                                                                         <h2> Settings Panel</h2>
                                                                     </div>
                                                                     <ul class="setting-panel-list">
-                                                                       
-                                                                   
+                                                                    
                                                                         <li>
                                                                             <div class="checkbox-setting-pro">
                                                                                 <div class="checkbox-title-pro">
@@ -166,132 +172,58 @@
                             <div class="mobile-menu">
                                 <nav id="dropdown">
                                     <ul class="mobile-menu-nav">
-                                        <li><a data-toggle="collapse" data-target="#Charts" href="#">Home <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul class="collapse dropdown-header-top">
-                                                <li><a href="index.html">Dashboard v.1</a></li>
-                                                <li><a href="index-1.html">Dashboard v.2</a></li>
-                                                <li><a href="index-3.html">Dashboard v.3</a></li>
-                                                <li><a href="product-list.html">Product List</a></li>
-                                                <li><a href="product-edit.html">Product Edit</a></li>
-                                                <li><a href="product-detail.html">Product Detail</a></li>
-                                                <li><a href="product-cart.html">Product Cart</a></li>
-                                                <li><a href="product-payment.html">Product Payment</a></li>
-                                                <li><a href="analytics.html">Analytics</a></li>
-                                                <li><a href="widgets.html">Widgets</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#demo" href="#">Mailbox <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul id="demo" class="collapse dropdown-header-top">
-                                                <li><a href="mailbox.html">Inbox</a>
-                                                </li>
-                                                <li><a href="mailbox-view.html">View Mail</a>
-                                                </li>
-                                                <li><a href="mailbox-compose.html">Compose Mail</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#others" href="#">Miscellaneous <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul id="others" class="collapse dropdown-header-top">
-                                                <li><a href="file-manager.html">File Manager</a></li>
-                                                <li><a href="contacts.html">Contacts Client</a></li>
-                                                <li><a href="projects.html">Project</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="500.html">500 Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Miscellaneousmob" href="#">Interface <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul id="Miscellaneousmob" class="collapse dropdown-header-top">
-                                                <li><a href="google-map.html">Google Map</a>
-                                                </li>
-                                                <li><a href="data-maps.html">Data Maps</a>
-                                                </li>
-                                                <li><a href="pdf-viewer.html">Pdf Viewer</a>
-                                                </li>
-                                                <li><a href="x-editable.html">X-Editable</a>
-                                                </li>
-                                                <li><a href="code-editor.html">Code Editor</a>
-                                                </li>
-                                                <li><a href="tree-view.html">Tree View</a>
-                                                </li>
-                                                <li><a href="preloader.html">Preloader</a>
-                                                </li>
-                                                <li><a href="images-cropper.html">Images Cropper</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Chartsmob" href="#">Charts <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul id="Chartsmob" class="collapse dropdown-header-top">
-                                                <li><a href="bar-charts.html">Bar Charts</a>
-                                                </li>
-                                                <li><a href="line-charts.html">Line Charts</a>
-                                                </li>
-                                                <li><a href="area-charts.html">Area Charts</a>
-                                                </li>
-                                                <li><a href="rounded-chart.html">Rounded Charts</a>
-                                                </li>
-                                                <li><a href="c3.html">C3 Charts</a>
-                                                </li>
-                                                <li><a href="sparkline.html">Sparkline Charts</a>
-                                                </li>
-                                                <li><a href="peity.html">Peity Charts</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Tablesmob" href="#">Tables <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul id="Tablesmob" class="collapse dropdown-header-top">
-                                                <li><a href="static-table.html">Static Table</a>
-                                                </li>
-                                                <li><a href="data-table.html">Data Table</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#formsmob" href="#">Forms <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul id="formsmob" class="collapse dropdown-header-top">
-                                                <li><a href="basic-form-element.html">Basic Form Elements</a>
-                                                </li>
-                                                <li><a href="advance-form-element.html">Advanced Form Elements</a>
-                                                </li>
-                                                <li><a href="password-meter.html">Password Meter</a>
-                                                </li>
-                                                <li><a href="multi-upload.html">Multi Upload</a>
-                                                </li>
-                                                <li><a href="tinymc.html">Text Editor</a>
-                                                </li>
-                                                <li><a href="dual-list-box.html">Dual List Box</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Appviewsmob" href="#">App views <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul id="Appviewsmob" class="collapse dropdown-header-top">
-                                                <li><a href="basic-form-element.html">Basic Form Elements</a>
-                                                </li>
-                                                <li><a href="advance-form-element.html">Advanced Form Elements</a>
-                                                </li>
-                                                <li><a href="password-meter.html">Password Meter</a>
-                                                </li>
-                                                <li><a href="multi-upload.html">Multi Upload</a>
-                                                </li>
-                                                <li><a href="tinymc.html">Text Editor</a>
-                                                </li>
-                                                <li><a href="dual-list-box.html">Dual List Box</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Pages <span class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
-                                            <ul id="Pagemob" class="collapse dropdown-header-top">
-                                                <li><a href="login.html">Login</a>
-                                                </li>
-                                                <li><a href="register.html">Register</a>
-                                                </li>
-                                                <li><a href="lock.html">Lock</a>
-                                                </li>
-                                                <li><a href="password-recovery.html">Password Recovery</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+                                        <hr style="margin: 1px 0;">
+
+                    <li class="nav-item">
+                            <a class="" href="index.html">
+                                <img src="img/notification/4.jpg" alt="" style="width: 50px; height: 40px; border-radius: 40%;">
+                                <span class="admin-name">Advanda</span>
+                             </a>
+                        <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                            <li><a href="#"><span class="icon nalika-user author-log-ic"></span> My Profile</a>
+                            </li>
+                            <li><a href="#"><span class="icon nalika-settings author-log-ic"></span> Settings</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr style="margin: 1px 0;">
+                    <li>
+                        <a class="" href="{{ route('dashboard.home') }}" aria-expanded="false"><i class="icon nalika-home icon-wrap"></i> <span class="mini-click-non">Dashboard</span></a>
+                        
+                    </li>   
+                    <li>
+                        <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">Licenses</span></a>
+                        <ul class="submenu-angle" aria-expanded="false">    
+                            <li><a title="License List" href="{{ route('licenses_list') }}"><span class="mini-sub-pro">License List</span></a></li>
+                            <li><a title="Order New License" href="{{ route('license_add') }}"><span class="mini-sub-pro">Order New License</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-folder icon-wrap"></i> <span class="mini-click-non">Wallet</span></a>
+                       
+                    </li>
+                    <li>
+                        <a class="" href="#" aria-expanded="false"><i class="icon nalika-ppt icon-wrap"></i> <span class="mini-click-non">Invoices</span></a>
+                      
+                    </li>
+                    <li>
+                        <a class=""  href="{{ route('free_trial') }}" aria-expanded="false"><i class="icon nalika-eye icon-wrap"></i> <span class="mini-click-non">Free Trial</span></a>
+                      
+                    </li>
+                    <li>
+                        <a class="" href="{{ route('files_guide') }}" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Files & Guide</span></a>
+                        
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="#" aria-expanded="false"><i  class="icon nalika-user icon-wrap"></i> <span class="mini-click-non">Account</span></a>
+                        
+                    </li>
+                    <li>
+                        <a class="" href="#" aria-expanded="false"><i class="icon nalika-smartphone-call icon-wrap"></i> <span class="mini-click-non">Logout</span></a>
+                        
+                    </li>
+                    
+                              
                                     </ul>
                                 </nav>
                             </div>
@@ -300,3 +232,11 @@
                 </div>
             </div>
         </div>
+        <script>
+            // JavaScript to toggle night mode
+            const checkbox = document.getElementById('example4');
+            checkbox.addEventListener('change', function() {
+                document.body.classList.toggle('night-mode', checkbox.checked);
+            });
+        </script>
+        
