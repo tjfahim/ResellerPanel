@@ -3,10 +3,10 @@
 
 @section('main_content')
     
-<div class="section-admin container-fluid" style="margin-top: 8%;margin-bottom:3%;">
-    <div style="font-size: 22px;color:white;margin-bottom:2%">Dashboard</div>
+<div class="section-admin container-fluid" style="margin-top: 7%;padding-bottom:3%">
+    <div class="nightmoodtextcolor" style="font-size: 22px;margin-bottom:2%">Dashboard</div>
 
-    <div class="row admin text-center" >
+    <div class="row admin text-center"  >
         <div class="col-md-12">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" >
@@ -84,8 +84,8 @@
                     <div class="" style="color: white; background-color: #007BFF; border-top-left-radius: 3px; border-top-right-radius: 3px; font-size: 14px; height: 35px; display: flex; align-items: center; padding-left: 5px;">
                         License Purchase Graph 2023
                     </div>
-                    <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 300px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
-                        <canvas id="chartjs-bar" style="height: 100%;"></canvas>
+                    <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 260px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
+                        <canvas id="chartjs-bar" style="height: 70%;"></canvas>
                     </div>
                 </div>
                 
@@ -93,8 +93,8 @@
                     <div class="" style="color: white; background-color: #007BFF; border-top-left-radius: 3px; border-top-right-radius: 3px; font-size: 14px; height: 35px; display: flex; align-items: center; padding-left: 5px;">
                         Active Licenses by Softwares
                     </div>
-                    <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 300px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
-                        <canvas id="chartjs-pie" style="height: 100%;"></canvas>
+                    <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 260px; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
+                        <canvas id="chartjs-pie" style="height: 70%;"></canvas>
                     </div>
                 </div>
                 

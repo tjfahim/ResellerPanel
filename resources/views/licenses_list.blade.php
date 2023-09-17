@@ -4,7 +4,7 @@
 @section('main_content')
     
 <div class="section-admin container-fluid" style="margin-top: 8%;margin-bottom:3%;">
-    <div style="font-size: 22px;color:white;margin-bottom:2%">Licenses</div>
+    <div class="nightmoodtextcolor" style="font-size: 22px;margin-bottom:2%">Licenses</div>
 
     <div class="product-status mg-b-30">
         <div class="container-fluid">

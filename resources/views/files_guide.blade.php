@@ -4,12 +4,12 @@
 @section('main_content')
     
 <div class="section-admin container-fluid" style="margin-top: 8%;margin-bottom:17%;">
-    <div style="font-size: 22px;color:white;margin-bottom:2%">Files Guide</div>
+    <div  class="nightmoodtextcolor" style="font-size: 22px;margin-bottom:2%">Files Guide</div>
 
         <div class="row admin text-center" >
             <div class="col-md-12">
            
-                <div class="row text-left" style="">
+                <div class="row text-left" style="margin-bottom:5%;" >
                     <div class="col-lg-6 col-md-3 col-sm-3 col-xs-12">
                         <div class="" style="color: white; background-color: #3F6791; border-top-left-radius: 3px; border-top-right-radius: 3px; font-size: 14px; height: 35px; display: flex; align-items: center; padding-left: 15px;">
                             Import Files & Guides

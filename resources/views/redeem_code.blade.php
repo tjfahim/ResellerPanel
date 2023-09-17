@@ -3,14 +3,14 @@
 
 @section('main_content')
     
-<div class="section-admin container-fluid" style="margin-top: 8%;color:white;margin-bottom:10%;">
-    <div class="dayandnight" style="font-size: 22px;margin-bottom:2%">  Redeem Code</div>
+<div class="section-admin container-fluid" style="margin-top: 8%;color:white;margin-bottom:10%;margin-bottom:15%;">
+    <div class="nightmoodtextcolor" style="font-size: 22px;margin-bottom:2%">  Redeem Code</div>
 
 
     <div class="row admin text-center" >
         <div class="col-md-12">
        
-            <div class="row text-left" style="">
+            <div class="row text-left" style="margin-bottom:%;">
                 <div class="col-lg-6 col-md-3 col-sm-3 col-xs-12">
               
                     <div class="admin-content analysis-progrebar-ctn res-mg-t-15" style="height: 60px; border-radius: 3px; margin-bottom: 20px; display: flex;">

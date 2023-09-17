@@ -69,9 +69,14 @@
     <style>
         /* Add your styles for night mode here */
         body.night-mode {
-            background-color: white;
+            background-color: white; /* Change this to your desired night mode background color */
+            color: black; /* Change text color for night mode if needed */
+            min-height: 110vh;
         }
-      
+       .nightmoodtextcolor {
+        color: #007BFF;
+        font-weight: 800; /* Change text color for elements with the nightmoodtextcolor class in night mode */
+    }
     </style>
 </head>
 
@@ -132,14 +137,14 @@
                                                                         <li>
                                                                             <div class="checkbox-setting-pro">
                                                                                 <div class="checkbox-title-pro">
-                                                                                    <h2>Night Mode</h2>
+                                                                                    <h2>Day Mode</h2>
                                                                                     <div class="ts-custom-check">
                                                                                         <div class="onoffswitch">
                                                                                             <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
                                                                                             <label class="onoffswitch-label" for="example4">
-																									<span class="onoffswitch-inner"></span>
-																									<span class="onoffswitch-switch"></span>
-																								</label>
+                                                                                                <span class="onoffswitch-inner"></span>
+                                                                                                <span class="onoffswitch-switch"></span>
+                                                                                            </label>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -232,11 +237,27 @@
                 </div>
             </div>
         </div>
-        <script>
-            // JavaScript to toggle night mode
-            const checkbox = document.getElementById('example4');
-            checkbox.addEventListener('change', function() {
-                document.body.classList.toggle('night-mode', checkbox.checked);
-            });
-        </script>
+    
+<script>
+    // JavaScript to toggle night mode and store the state in localStorage
+    const checkbox = document.getElementById('example4');
+    const dayMode = localStorage.getItem('dayMode');
+    const textElement = document.querySelector('.nightmoodtextcolor');
+
+
+    if (dayMode === 'enabled') {
+        document.body.classList.add('night-mode');
+        checkbox.checked = true;
+    }
+ 
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            document.body.classList.add('night-mode');
+            localStorage.setItem('dayMode', 'enabled');
+        } else {
+            document.body.classList.remove('night-mode');
+            localStorage.setItem('dayMode', 'disabled');
+        }
+    });
+</script>
         

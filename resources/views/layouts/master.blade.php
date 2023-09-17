@@ -1,7 +1,7 @@
 @include('layouts.includes.header')
 
   
-    <main id="main" class="main">
+    <main id="main" class="main" style=" "> 
 
         @yield('main_content')
 
